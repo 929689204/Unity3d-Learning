@@ -30,13 +30,28 @@ public class Tictactoe : MonoBehaviour
         }
         turn = 0;
     }
+    void xreset()
+    {
+        for (i = 0; i < 9; i++)
+        {
+            info[i] = "";
+
+            state[i] = 0;
+        }
+        turn = 1;
+    }
     void OnGUI()
     {
         int x, y, num;
         GUI.Label(new Rect(40, 320, 50, 50), result);
-        if (GUI.Button(new Rect(200, 320, 100, 40), "reStart"))
+        if (GUI.Button(new Rect(200, 320, 100, 40), "O Start"))
         {
             reset();
+            result = "";
+        }
+        if (GUI.Button(new Rect(100, 320, 100, 40), "X Start"))
+        {
+            xreset();
             result = "";
         }
         GUI.color = Color.yellow;
@@ -60,9 +75,14 @@ public class Tictactoe : MonoBehaviour
                 x = 20;
             }
 
-            if (GUI.Button(new Rect(200, 320, 100, 40), "reStart"))
+            if (GUI.Button(new Rect(200, 320, 100, 40), "O Start"))
             {
                 reset();
+                result = "";
+            }
+            if (GUI.Button(new Rect(100, 320, 100, 40), "X Start"))
+            {
+                xreset();
                 result = "";
             }
             return;
