@@ -288,15 +288,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\ActionManager\CCSequenceAction.cs" />
-    <Compile Include="Assets\Scripts\ActionManager\ISSActionCallback.cs" />
-    <Compile Include="Assets\Scripts\ActionManager\MoveAction.cs" />
-    <Compile Include="Assets\Scripts\ActionManager\SSAction.cs" />
-    <Compile Include="Assets\Scripts\ActionManager\SSActionManager.cs" />
-    <Compile Include="Assets\Scripts\BaseCode.cs" />
-    <Compile Include="Assets\Scripts\BoatController.cs" />
-    <Compile Include="Assets\Scripts\GenGameObject.cs" />
-    <Compile Include="Assets\Scripts\UserInterface.cs" />
+    <Compile Include="Assets\Scripts\FirstSceneController.cs" />
+    <Compile Include="Assets\Scripts\FirstSSActionManager.cs" />
+    <Compile Include="Assets\Scripts\SSdirector.cs" />
+    <Compile Include="Assets\Scripts\UserGUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
