@@ -1,3 +1,4 @@
-# Unity3d-Learning Homework3分支
-3d作业 homework3
-test
+# Homework3
+Priests and DevilsV2.0(动作分离版本)
+## 参考 Fantasy Skybox FREE 构建自己的游戏场景
+！[relation](pic.png)
