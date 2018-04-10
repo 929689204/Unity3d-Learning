@@ -35,7 +35,6 @@ public class SSAction : ScriptableObject
     {
         throw new System.NotImplementedException();
     }
-
     public virtual void Update()
     {
         throw new System.NotImplementedException();
