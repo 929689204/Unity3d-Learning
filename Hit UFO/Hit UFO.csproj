@@ -284,10 +284,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\CountManager.cs" />
     <Compile Include="Assets\Scripts\DiskFactoryBC.cs" />
-    <Compile Include="Assets\Scripts\GameModel.cs" />
-    <Compile Include="Assets\Scripts\Judge.cs" />
-    <Compile Include="Assets\Scripts\SceneController.cs" />
+    <Compile Include="Assets\Scripts\PhysicsActionManager.cs" />
     <Compile Include="Assets\Scripts\SceneControllerBC.cs" />
     <Compile Include="Assets\Scripts\UserInterface.cs" />
   </ItemGroup>
