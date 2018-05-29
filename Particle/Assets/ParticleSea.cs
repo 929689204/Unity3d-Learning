@@ -85,7 +85,11 @@ public class ParticleSea : MonoBehaviour {
         {
             for (int j = 0; j < seaResolution; j++)
             {
-                particlesArray[i * seaResolution + j].color = colorGradient.Evaluate(Random.value);
+                float value = (Time.realtimeSinceStartup - Mathf.Floor(Time.realtimeSinceStartup));
+                value += psetting[i * seaResolution + j].angle / 2 / Mathf.PI;
+                while (value > 1)
+                    value--;
+                particlesArray[i * seaResolution + j].color = colorGradient.Evaluate(value);
             }
         }
     }
